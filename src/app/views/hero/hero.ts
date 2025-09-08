@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
-import { Card } from '../../component/card/card';
+import { CardXL } from '../../component/card-xl/card-xl';
 
 @Component({
   selector: 'app-hero',
-  imports: [Card],
+  imports: [CardXL],
   templateUrl: './hero.html',
-  styleUrl: './hero.css'
+  styleUrl: './hero.css',
 })
-export class Hero {
-
-}
+export class Hero {}
