@@ -1,9 +1,8 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { Logo } from '../logo/logo';
 
 @Component({
   selector: 'app-card-xl',
-  imports: [Logo],
+  imports: [],
   templateUrl: './card-xl.html',
   styleUrl: './card-xl.css',
   changeDetection: ChangeDetectionStrategy.OnPush
