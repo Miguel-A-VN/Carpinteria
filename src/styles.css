@@ -1,1 +1,68 @@
+:root {
+    --color-primary: #874c2a;
+    --color-secondary: #d37741;
+    --color-tertiary: #ff8f4e;
+    --color-quaternary: #ffa64e;
+    --color-quinary: #000000;
+
+    --color-text-primary: #000000;
+    --color-text-secondary: #ffffff;
+    --color-text-tertiary: #4a2c2a;
+}
+
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+p,
+a,
+li,
+span {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    color: var(--color-text-primary);
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--color-secondary);
+    color: var(--color-text-secondary);
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+
+    &:hover {
+        background: var(--color-tertiary);
+    }
+}
+
+app-header { 
+    color: var(--color-text-secondary); 
+}
+.bg-header, .bg-footer{
+    background: var(--color-primary);
+
+}
+app-footer { 
+    color: var(--color-text-secondary); 
+    background: var(--color-primary);
+}
