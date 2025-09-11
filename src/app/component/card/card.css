@@ -1,0 +1,23 @@
+app-card{
+    
+    width: 200px;
+    max-height: 300px;
+}
+
+article.card{
+    display: flex;
+    justify-content: center;
+    /* overflow: hidden; */
+}
+
+div.image{
+    width: auto;
+    height: 50%;
+    img{
+        width: 100%;
+    }
+}
+
+.info{
+    height: 50%;
+}

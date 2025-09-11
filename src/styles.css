@@ -1,5 +1,5 @@
 :root {
-    --color-primary: #874c2a;
+    --color-primary: #cd703a;
     --color-secondary: #d37741;
     --color-tertiary: #ff8f4e;
     --color-quaternary: #ffa64e;
@@ -20,6 +20,12 @@
 a {
     text-decoration: none;
     color: inherit;
+}
+
+h2,h3,h4,h5,h6{
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 li {
@@ -54,20 +60,11 @@ span {
         background: var(--color-tertiary);
     }
 }
-
-app-header {
-    color: var(--color-text-secondary);
-}
-
 .bg-header,
-.bg-footer {
+.bg-footer, .bg-footer p {
     background: var(--color-primary);
-
-}
-
-app-footer {
     color: var(--color-text-secondary);
-    background: var(--color-primary);
+
 }
 
 section.background-image {
@@ -88,5 +85,30 @@ section.background-image {
         width: 50%;
         padding: 50px;
         text-align: center;
+    }
+}
+
+app-button-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--color-tertiary);
+    }
+
+    img {
+        width: 50px;
+        height: 50px;
     }
 }
