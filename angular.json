@@ -19,7 +19,7 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            "outputPath": "dist/carpinteria",
+            "outputPath": "dist/carpinteria/browser",
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
