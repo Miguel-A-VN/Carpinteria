@@ -1,1 +1,114 @@
+:root {
+    --color-primary: #cd703a;
+    --color-secondary: #d37741;
+    --color-tertiary: #ff8f4e;
+    --color-quaternary: #ffa64e;
+    --color-quinary: #000000;
+
+    --color-text-primary: #000000;
+    --color-text-secondary: #ffffff;
+    --color-text-tertiary: #4a2c2a;
+}
+
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h2,h3,h4,h5,h6{
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+li {
+    list-style: none;
+}
+
+p,
+a,
+li,
+span {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    color: var(--color-text-primary);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--color-secondary);
+    color: var(--color-text-secondary);
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+
+    &:hover {
+        background: var(--color-tertiary);
+    }
+}
+.bg-header,
+.bg-footer, .bg-footer p {
+    background: var(--color-primary);
+    color: var(--color-text-secondary);
+
+}
+
+section.background-image {
+    max-width: 100%;
+    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.912)), url('/images/covers/coverBg.jpg') no-repeat top center;
+    background-size: cover;
+    border-radius: 20px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+
+    p {
+        color: var(--color-text-secondary);
+        font-size: 1.8rem;
+        width: 50%;
+        padding: 50px;
+        text-align: center;
+    }
+}
+
+app-button-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--color-tertiary);
+    }
+
+    img {
+        width: 50px;
+        height: 50px;
+    }
+}

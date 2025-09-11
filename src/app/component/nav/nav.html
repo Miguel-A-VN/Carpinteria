@@ -1,0 +1,8 @@
+<!-- nav.html -->
+<nav>
+  <app-nav-item
+    *ngFor="let item of items()"
+    [label]="item.label"
+    [route]="item.route">
+  </app-nav-item>
+</nav>
