@@ -22,7 +22,11 @@ a {
     color: inherit;
 }
 
-h2,h3,h4,h5,h6{
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Acme", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -60,8 +64,10 @@ span {
         background: var(--color-tertiary);
     }
 }
+
 .bg-header,
-.bg-footer, .bg-footer p {
+.bg-footer,
+.bg-footer p {
     background: var(--color-primary);
     color: var(--color-text-secondary);
 
@@ -111,4 +117,13 @@ app-button-whatsapp {
         width: 50px;
         height: 50px;
     }
+}
+
+
+app-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+    /* espacio entre tarjetas */
+    padding: 16px;
 }

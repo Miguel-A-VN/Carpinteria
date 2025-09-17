@@ -1,6 +1,6 @@
 // header.ts (padre)
 import { Component, signal } from '@angular/core';
-import { Logo } from "../logo/logo";
+import { Logo } from '../logo/logo';
 import { Nav } from '../nav/nav';
 
 @Component({
@@ -8,13 +8,13 @@ import { Nav } from '../nav/nav';
   standalone: true,
   imports: [Logo, Nav],
   templateUrl: './header.html',
-  styleUrls: ['./header.css']
+  styleUrls: ['./header.css'],
 })
 export class Header {
   items = signal([
     { label: 'Inicio', route: '/' },
-    { label: 'Catálogo', route: '/catalog' },
+    { label: 'Categorias', route: '/categories' },
     { label: 'Sobre nosotros', route: '/about' },
-    { label: 'Contacto', route: '/contact' }
+    { label: 'Contacto', route: '/contact' },
   ]);
 }

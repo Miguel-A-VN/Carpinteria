@@ -1,0 +1,8 @@
+@for (category of listCategories; track category.title) {
+<app-card-category
+  [titleCategory]="category.title"
+  [imageUrlCategory]="category.imageUrlCategory"
+></app-card-category>
+} @empty {
+<p>No hay elementos disponibles.</p>
+}

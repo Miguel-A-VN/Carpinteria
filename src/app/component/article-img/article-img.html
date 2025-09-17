@@ -1,9 +1,13 @@
 <article>
-    <div class="title">
-        <h2>{{titleArticle}}</h2>
-    </div>
-    <img src={{urlImage}} alt="">
-    <div class="textInfo">
-        <p *ngFor="let t of texts">{{ t }}</p>
-    </div>
+  <div class="title">
+    <h2>{{ titleArticle }}</h2>
+  </div>
+  <img src="{{ urlImage }}" alt="" />
+  <div class="textInfo">
+    @for (t of texts; track $index) {
+    <p>{{ t }}</p>
+    } @empty {
+    <p>No hay textos disponibles.</p>
+    }
+  </div>
 </article>
