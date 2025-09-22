@@ -8,7 +8,7 @@ import { NavItem } from '../nav-item/nav-item';
   standalone: true,
   imports: [CommonModule, NavItem],
   templateUrl: './nav.html',
-  styleUrls: ['./nav.css']
+  styleUrls: ['./nav.css'],
 })
 export class Nav {
   @Input() items!: Signal<{ label: string; route: string }[]>;

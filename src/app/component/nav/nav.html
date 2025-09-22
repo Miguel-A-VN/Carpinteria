@@ -1,8 +1,8 @@
 <!-- nav.html -->
 <nav>
-  <app-nav-item
-    *ngFor="let item of items()"
-    [label]="item.label"
-    [route]="item.route">
-  </app-nav-item>
+  @for (item of items(); track item.label) {
+  <app-nav-item [label]="item.label" [route]="item.route"> </app-nav-item>
+  } @empty {
+  <p>No hay elementos disponibles.</p>
+  }
 </nav>

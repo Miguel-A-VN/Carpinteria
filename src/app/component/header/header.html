@@ -1,6 +1,22 @@
-<div class="bg-header background-image ">
+@if ((currentUrl$ | async) === '/') {
+<div class="bg-header background-image">
+  <header>
+    <app-logo></app-logo>
+    <app-nav [items]="items"></app-nav>
+    <section class="header-paragraph">
+      <p class="font-bebas">
+        Durante más de dos décadas, hemos transformado la madera en piezas que
+        cuentan historias: muebles y utensilios creados y restaurados con
+        dedicación y pasión artesanal.
+      </p>
+    </section>
+  </header>
+</div>
+} @else {
+<div class="bg-header">
   <header>
     <app-logo></app-logo>
     <app-nav [items]="items"></app-nav>
   </header>
 </div>
+}
