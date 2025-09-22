@@ -18,7 +18,7 @@ export class Header {
     { label: 'Inicio', route: '/' },
     { label: 'Categorias', route: '/categories' },
     { label: 'Sobre nosotros', route: '/about' },
-    { label: 'Contacto', route: '/contact' },
+    { label: 'Contactanos', route: '/contact' },
   ]);
 
   currentUrl$: Observable<string>;
