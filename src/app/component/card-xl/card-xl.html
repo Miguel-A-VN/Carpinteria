@@ -1,0 +1,13 @@
+@for(section of sections; track section.title; let i = $index){
+<div class="section" [ngClass]="{ 'reverse': i % 2 !== 0 }">
+
+  <div class="text">
+    <h2>{{ section.title }}</h2>
+    <p>{{ section.text }}</p>
+  </div>
+
+  <div class="image">
+    <img [src]="section.image" alt="{{ section.title }}">
+  </div>
+</div>
+}
