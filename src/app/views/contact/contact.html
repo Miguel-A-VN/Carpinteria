@@ -2,8 +2,12 @@
   <img src="" alt="" />
 </div>
 <form action="">
-  <label for="menssage">Tu mensaje</label>
-  <input id="menssage" type="text" />
-  <label for="email">Tu correo</label>
-  <input id="email" type="email" />
+    <div class="field">
+        <label for="menssage">Tu mensaje</label>
+        <input id="menssage" type="text" [formControl]="menssage"/>
+    </div>
+    <div class="fiels">
+        <label for="email">Tu correo</label>
+        <input id="email" type="email" [formControl]="email" />
+    </div>
 </form>

@@ -9,6 +9,8 @@ import { FormControl, ReactiveFormsModule } from '@angular/forms';
 })
 export class Contact {
 
-  name = new FormControl('');
+  menssage = new FormControl('');
+  email = new FormControl('');
+
 
 }
