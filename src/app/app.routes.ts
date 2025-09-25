@@ -7,21 +7,12 @@ import { AddFurniture } from './views/add-furniture/add-furniture';
 import { Categories } from './views/categories/categories';
 import { NgModule } from '@angular/core';
 
+
 export const routes: Routes = [
   { path: '', component: Hero },
-  { path: 'about', component: About, title: 'Sobre Nosotro' },
+  { path: 'about', component: About, title: 'Sobre Nosotros' },
   { path: 'categories', component: Categories, title: 'Categorias' },
-  { path: 'category/:nameCategory', component: Catalog,
-    data: { 
-           prerender: true,
-           getPrerenderParams: () => [
-             { nameCategory: 'sillas' },
-             { nameCategory: 'mesas' },
-             { nameCategory: 'sofas' },
-             { nameCategory: 'puertas' },
-           ]
-         } 
-  },
+  { path: 'category/:nameCategory', component: Catalog, title: 'Catalogo' },
   { path: 'contact', component: Contact, title: 'Contacto' },
   { path: 'add', component: AddFurniture, title: 'Añadir Muebles' },
 ];
