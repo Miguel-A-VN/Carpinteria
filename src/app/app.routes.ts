@@ -11,8 +11,10 @@ export const routes: Routes = [
   { path: '', component: Hero },
   { path: 'about', component: About, title: 'Sobre Nosotro' },
   { path: 'categories', component: Categories, title: 'Categorias' },
-  { path: 'category/:nameCategory', component: Catalog, title: 'Categoria', data: {
-      renderMode: 'ssr' // O 'dynamic' en versiones más recientes
+  { path: 'category/:nameCategory', component: Catalog,
+    data: {
+      prerender: 'false',
+      title: 'Categoria'
     } },
   { path: 'contact', component: Contact, title: 'Contacto' },
   { path: 'add', component: AddFurniture, title: 'Añadir Muebles' },
