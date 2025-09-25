@@ -1,16 +1,13 @@
 import { Component, Input } from '@angular/core';
-import { Button } from '../button/button';
+import { RouterLink } from "@angular/router";
 
 @Component({
   selector: 'app-card',
   standalone: true,
-  imports: [Button],
+  imports: [RouterLink],
   templateUrl: './card.html',
   styleUrl: './card.css',
 })
 export class Card {
-  @Input() title: string = '';
-  @Input() description: string = '';
-  @Input() image: string[] = [];
-  @Input() categories: string[] = [];
+   @Input() article!: { id: number; title: string; text: string; image: string };
 }

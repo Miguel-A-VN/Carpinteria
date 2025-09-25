@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { ArticlesService } from '../../services/articles';
 
 @Component({
   selector: 'app-card-category',

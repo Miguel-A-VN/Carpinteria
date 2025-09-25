@@ -12,11 +12,11 @@ import { CardCategory } from '../../component/card-category/card-category';
 export class Categories {
   listCategories = [
     {
-      title: 'Sillas',
+      title: 'sillas',
       imageUrlCategory: '/images/categories/mesaysilla.jpg',
     },
     {
-      title: 'Mesas',
+      title: 'mesas',
       imageUrlCategory: '/images/categories/Mesa.jpg',
     },
   ];

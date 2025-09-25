@@ -1,10 +1,8 @@
-<article class="card">
-  <div class="img">
-    <img src="{{ image }}" alt="" />
-  </div>
-  <div class="info">
-    <h3>{{ title }}</h3>
-    <p>{{ description }}</p>
-    <app-button label="Ver Más" route="/"></app-button> 
-  </div>
-</article>
+    <a [routerLink]="'/' + article.id" class="card">
+      <div class="img">
+        <img src="{{ article.image }}" alt="{{article.title}}" />
+      </div>
+      <div class="title">
+        <h3>{{ article.title }}</h3>
+      </div>
+    </a>

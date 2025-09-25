@@ -2,7 +2,9 @@
   <div class="title">
     <h2>{{ titleArticle }}</h2>
   </div>
+
   <img src="{{ urlImage }}" alt="" />
+
   <div class="textInfo">
     @for (t of texts; track $index) {
     <p>{{ t }}</p>
@@ -10,4 +12,5 @@
     <p>No hay textos disponibles.</p>
     }
   </div>
+  
 </article>

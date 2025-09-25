@@ -1,1 +1,11 @@
-<app-card-xl></app-card-xl>
+<section>
+  <h2>Muebles Nuevos</h2>
+
+  @for (article of articlesService.recentArticles(); track article.id; let i = $index) {
+    <app-card-xl
+      [article]="article"
+      [index]="i"
+    />
+  }
+  
+</section>

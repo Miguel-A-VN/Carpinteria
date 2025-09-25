@@ -1,3 +1,5 @@
-<app-card [image]="['/images/imagenesDeLaCarpinteria/Mesas/mesa circular y dos sillas de comino.jpg']" [title]="'Mesas'">
+<h2>{{categoryParam()}}</h2>
 
-</app-card>
+@for (article of articlesByCategory(); track article.id) {
+  <app-card [article]="article">nada</app-card>
+}
