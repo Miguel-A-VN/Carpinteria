@@ -12,10 +12,16 @@ export const routes: Routes = [
   { path: 'about', component: About, title: 'Sobre Nosotro' },
   { path: 'categories', component: Categories, title: 'Categorias' },
   { path: 'category/:nameCategory', component: Catalog,
-    data: {
-      prerender: 'false',
-      title: 'Categoria'
-    } },
+    data: { 
+           prerender: true,
+           getPrerenderParams: () => [
+             { nameCategory: 'sillas' },
+             { nameCategory: 'mesas' },
+             { nameCategory: 'sofas' },
+             { nameCategory: 'puertas' },
+           ]
+         } 
+  },
   { path: 'contact', component: Contact, title: 'Contacto' },
   { path: 'add', component: AddFurniture, title: 'Añadir Muebles' },
 ];
